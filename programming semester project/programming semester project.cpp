@@ -104,7 +104,7 @@ int main() {
         cout << "6. Exit\n";
         cin >> choice;
 
-              switch (choice) {
+            switch (choice) {
             case 1:
                 addStudent();
                 break;
@@ -121,10 +121,10 @@ int main() {
                 saveToFile();
                 break;
             case 6:
-                cout << "Exiting....\n";
+                cout << "Exiting...\n";
                 break;
             default:
-                cout << "Invalid choice try again.\n";
+                cout << "Invalid choice. Try again.\n";
         }
     } while (choice != 6);
 
