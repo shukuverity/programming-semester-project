@@ -142,7 +142,7 @@ int main() {
                 cout << "Exiting...\n";
                 break;
             default:
-                cout << "Invalid choice. Try again.\n";
+                cout << "Invalid choice please Try again.\n";
         }
     } while (choice != 6);
 
