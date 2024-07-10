@@ -122,7 +122,7 @@ int main() {
         cout << "6. Exit\n";
         cin >> choice;
 
-        switch (choice) {
+              switch (choice) {
             case 1:
                 addStudent();
                 break;
@@ -142,11 +142,9 @@ int main() {
                 cout << "Exiting...\n";
                 break;
             default:
-                cout << "Invalid choice please Try again.\n";
+                cout << "Invalid choice. Try again.\n";
         }
     } while (choice != 6);
 
     return 0;
 }
-
-
