@@ -124,7 +124,7 @@ int main() {
                 cout << "Exiting....\n";
                 break;
             default:
-                cout << "Invalid choice please try again.\n";
+                cout << "Invalid choice try again.\n";
         }
     } while (choice != 6);
 
