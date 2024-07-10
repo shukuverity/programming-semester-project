@@ -75,7 +75,7 @@ void addStudent()
                 }
             }
         }
-    } while (choice != 3);
+    } while (choice ! = 3);
 
     students.push_back(student);
 }
