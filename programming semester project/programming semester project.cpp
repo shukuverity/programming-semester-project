@@ -58,8 +58,7 @@ void addStudent()
              }
          }
      }
-        else if (choice == 2) 
-        {
+        else if (choice == 2) { 
             cout << "Choose club/society: ";
             for (size_t i = 0; i < clubs.size(); ++i) {
                 cout << i + 1 << ". " << clubs[i].name << " (" << clubs[i].members.size() << "/" << clubs[i].max_capacity << ")\n";
