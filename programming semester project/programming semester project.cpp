@@ -4,7 +4,8 @@
 #include <string>
 #include <fstream>
 using namespace std;
-struct Student {
+struct Student
+{
     string firstname;
     string surname;
     string gender;
@@ -22,7 +23,8 @@ vector<Student> students;
 vector<Activity> sports = { {"Rugby", 20}, {"Athletics", 20}, {"Swimming", 20}, {"Soccer", 20} };
 vector<Activity> clubs = { {"Journalism Club", 60}, {"Red Cross Society", 60}, {"AISEC", 60}, {"Business Club", 60}, {"Computer Science Club", 60} };
 
-void addStudent() {
+void addStudent()
+{
     Student student;
     cout << "Enter first name: ";
     cin >> student.firstname;
