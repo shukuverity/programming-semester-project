@@ -19,6 +19,24 @@ struct Activity {
     vector<Student> members;
 };
 
+vector<Student> students;
+vector<Activity> sports = {{"Rugby", 20}, {"Athletics", 20}, {"Swimming", 20}, {"Soccer", 20}};
+vector<Activity> clubs = {{"Journalism Club", 60}, {"Red Cross Society", 60}, {"AISEC", 60}, {"Business Club", 60}, {"Computer Science Club", 60}};
+
+void addStudent() {
+    Student student;
+    cout << "Enter first name: ";
+    cin >> student.firstname;
+    cout << "Enter surname: ";
+    cin >> student.surname;
+    cout << "Enter gender (MUST BE Male/Female): ";
+    cin >> student.gender;
+    cout << "Enter age: ";
+    cin >> student.age;
+    cout << "Enter group (1,2,3): ";
+    cin >> student.group;
+
+    int choice;
  do {
      cout << "Choose activity type:\n 1. Sport\n 2.Club/Society\n 3. Done: ";
      cin >> choice;
