@@ -139,7 +139,7 @@ int main() {
                 saveToFile();
                 break;
             case 6:
-                cout << "Exiting...\n";
+                cout << "Exiting....\n";
                 break;
             default:
                 cout << "Invalid choice. Try again.\n";
