@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <fstream>
+#include <iostream>
 using namespace std;
 struct Student
 {
