@@ -29,7 +29,7 @@ void addStudent() {
     cout << "Enter first name: ";
     cin >> student.firstname;
     cout << "Enter surname: ";
-    cin >> student.surname;
+    cin >> student.surname
  // Validate gender input
     while (true) {
         cout << "Enter gender (Male/Female): ";
