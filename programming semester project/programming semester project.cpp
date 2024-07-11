@@ -31,7 +31,7 @@ void addStudent() {
     cin >> student.surname;
     cout << "Enter gender (MUST BE Male/Female): ";
     cin >> student.gender;
-    cout << "Enter age: ";
+    cout << "Enter age(MUST BE A NUMBER RANGING FROM 2-19): ";
     cin >> student.age;
     cout << "Enter group (1,2,3): ";
     cin >> student.group;
