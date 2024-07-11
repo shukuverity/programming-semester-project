@@ -31,6 +31,10 @@ void addStudent() {
     cin >> student.surname;
     cout << "Enter gender (MUST BE Male/Female): ";
     cin >> student.gender;
+    if (student.gender != "male" && student.gender != "female")
+ {
+     cout << "Invalid gender. Please try again" << endl; return addStudent();
+ }
     cout << "Enter age(MUST BE A NUMBER RANGING FROM 2-19): ";
     cin >> student.age;
     cout << "Enter group (1,2,3): ";
