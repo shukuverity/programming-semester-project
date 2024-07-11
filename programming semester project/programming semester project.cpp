@@ -29,12 +29,17 @@ void addStudent() {
     cin >> student.firstname;
     cout << "Enter surname: ";
     cin >> student.surname;
-    cout << "Enter gender (MUST BE Male/Female): ";
-    cin >> student.gender;
-    if (student.gender != "male" && student.gender != "female")
- {
-     cout << "Invalid gender. Please try again" << endl; return addStudent();
- }
+ // Validate gender input
+    while (true) {
+        cout << "Enter gender (Male/Female): ";
+        cin >> student.gender;
+        if (student.gender == "Male" || student.gender == "Female") {
+            break;
+        } else {
+            cout << "WRONG INPUT. Please enter Male or Female.\n";
+        }
+    }
+    
     cout << "Enter age(MUST BE A NUMBER RANGING FROM 2-19): ";
     cin >> student.age;
     cout << "Enter group (1,2,3): ";
