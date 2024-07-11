@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <limits> 
 using namespace std;
 struct Student
 {
@@ -40,8 +41,19 @@ void addStudent() {
         }
     }
     
-    cout << "Enter age(MUST BE A NUMBER RANGING FROM 2-19): ";
-    cin >> student.age;
+   // Validate age input
+    while (true) {
+        cout << "Enter age: ";
+        cin >> student.age;
+        if (cin.fail()) {
+            cin.clear(); // Clear the error flag
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignore invalid input
+            cout << "INVALID INPUT. Please enter a number.\n";
+        } else {
+            break;
+        }
+    }
+
     cout << "Enter group (1,2,3): ";
     cin >> student.group;
 
